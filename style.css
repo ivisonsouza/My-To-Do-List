@@ -13,6 +13,9 @@ body {
     flex-direction: column;
     height: 100vh;
     background: linear-gradient(45deg, black 40%, darkgoldenrod 70%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
 }
 
 .fechar {
@@ -31,6 +34,7 @@ body {
     border: 1px solid #fff;
 }
 
+
 #meuId h2 {
     text-align: center;
     color: #fff;
@@ -38,13 +42,16 @@ body {
 }
 
 #meuId input{
-    width: 413px;
+    width: 75%;
     padding: 5px;
     margin: 5px 0;
 }
 
 #meuId .addBtn {
+    position: relative;
+    left: 7px;
     padding: 5px;
+    width: 20%;
 }
 
 ul li {
@@ -53,4 +60,25 @@ ul li {
     background: lightgray;
     border: 1px solid #fff;
     padding: 3px;
+}
+
+
+@media (max-width: 555px) {
+    #container {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    background-repeat: no-repeat;
+    backdrop-filter: blur(4px);
+    padding: 10px;
+    border: 1px solid #fff;
+    }
+    #meuId input{
+    width: 95%;
+    padding: 5px;
+    margin: 5px 0;
+    }
+    .addBtn {
+        margin-bottom: 5px;
+        display: block;
+    }
 }
